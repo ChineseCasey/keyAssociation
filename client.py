@@ -5,7 +5,6 @@ import os
 import time
 
 ip_port = (socket.gethostname(), 9999)
-
 sk = socket.socket()
 sk.connect(ip_port)
 sk.sendall('{}'.format(os.getlogin()).encode('utf-8'))

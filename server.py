@@ -81,6 +81,7 @@ class MyServer(object):
             print(c)
             c.send_data('all')
 
+
 if __name__ == '__main__':
     ms = MyServer()
     ms.start_server()
